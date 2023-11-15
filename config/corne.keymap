@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(S))>;
+            label = "SCREENSHOT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -37,10 +46,10 @@
 
             label = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6     &kp N7          &kp N8          &kp N9           &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT   &kp DOWN        &kp UP          &kp RIGHT        &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &lt 1 END  &kp SPACE       &kp DELETE
+&trans     &kp N1        &kp N2        &kp N3    &kp N4  &kp N5       &kp N6     &kp N7          &kp N8          &kp N9            &kp N0             &kp BSPC
+&trans     &kp MINUS     &kp EQUAL     &trans    &trans  &trans       &kp LEFT   &kp MINUS       &kp UP          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&kp LSHFT  &bt BT_SEL 0  &bt BT_SEL 1  &trans    &trans  &trans       &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp BACKSLASH      &screenshot
+                                       &kp LGUI  &trans  &kp SPACE    &lt 1 END  &kp SPACE       &kp DELETE
             >;
         };
 
