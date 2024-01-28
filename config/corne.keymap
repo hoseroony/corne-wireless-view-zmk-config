@@ -40,7 +40,7 @@
 &kp TAB     &kp Q  &kp W  &kp E       &kp R                  &kp T         &kp Y      &kp U      &kp I       &kp O    &kp P     &kp BSPC
 &kp LSHIFT  &kp A  &kp S  &kp D       &kp F                  &kp G         &kp H      &kp J      &kp K       &kp L    &kp SEMI  &kp SQT
 &kp LCTRL   &kp Z  &kp X  &kp C       &kp V                  &kp B         &kp N      &kp M      &kp COMMA   &kp DOT  &kp FSLH  &kp ENTER
-                          &kp ESCAPE  &mt LEFT_ALT LEFT_WIN  &lt 2 HOME    &kp SPACE  &lt 1 END  &kp DELETE
+                          &kp ESCAPE  &mt LEFT_ALT LEFT_WIN  &lt 2 HOME    &lt 1 END  &kp SPACE  &kp DELETE
             >;
         };
 
@@ -53,10 +53,10 @@
 
             label = "Lower";
             bindings = <
-&trans     &kp N1        &kp N2        &kp N3    &kp N4  &kp N5        &kp N6     &kp N7          &kp N8          &kp N9            &kp N0             &kp BSPC
-&trans     &kp MINUS     &kp EQUAL     &trans    &trans  &trans        &kp LEFT   &kp MINUS       &kp UP          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&kp LSHFT  &bt BT_SEL 0  &bt BT_SEL 1  &trans    &trans  &trans        &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp BACKSLASH      &screenshot
-                                       &kp LGUI  &trans  &lt 3 HOME    &lt 1 END  &kp SPACE       &kp DELETE
+&kp TILDE  &kp N1        &kp N2        &kp N3      &kp N4  &kp N5        &kp N6     &kp N7          &kp N8          &kp N9            &kp N0             &kp BSPC
+&trans     &kp MINUS     &kp EQUAL     &trans      &trans  &trans        &kp LEFT   &kp MINUS       &kp UP          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&kp LSHFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_CLR  &trans  &trans        &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp BACKSLASH      &screenshot
+                                       &kp LGUI    &trans  &lt 3 HOME    &lt 1 END  &kp SPACE       &kp DELETE
             >;
         };
 
